@@ -4865,6 +4865,11 @@ pkg-up@^3.1.0:
   dependencies:
     find-up "^3.0.0"
 
+platform-detect@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/platform-detect/-/platform-detect-3.0.1.tgz#84cd928f1b5ec61277306d4aefdb229a808f4677"
+  integrity sha512-qAXFCIPz8Kd1b7RXuxsMNoZgLq+NR/fzJBFWpyUYARzh/ORG1xMG6suRLOFg/DkJXtS+pvsjawMfwq1htVBpUg==
+
 postcss-calc@^8.2.3:
   version "8.2.4"
   resolved "https://registry.yarnpkg.com/postcss-calc/-/postcss-calc-8.2.4.tgz#77b9c29bfcbe8a07ff6693dc87050828889739a5"

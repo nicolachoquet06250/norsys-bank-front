@@ -1,1 +1,14 @@
 // app global css in SCSS form
+
+.q-gutters-none {
+    padding: 0;
+    margin: 0;
+}
+
+.q-tab-container {
+    padding-top: 0!important;
+}
+
+.absolute-full > .scroll {
+    overflow-y: auto;
+}

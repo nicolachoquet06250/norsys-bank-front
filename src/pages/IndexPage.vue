@@ -7,11 +7,11 @@
     >
 
     <div>
-      <biometric-login />
+      Home
     </div>
   </q-page>
 </template>
 
 <script setup>
-import BiometricLogin from 'components/BiometricLogin.vue'
+
 </script>
