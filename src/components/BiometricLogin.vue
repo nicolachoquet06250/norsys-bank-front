@@ -1,12 +1,27 @@
 <template>
   <q-form>
-    <q-input v-model="rpId" disable dense type="text" label="domaine" />
-    <q-input v-model="user.email" dense type="email" label="e-mail" />
-    <q-input v-model="user.displayName" dense type="name" label="Nom complet" />
+    <q-input v-model="rpId"
+             disable dense
+             type="text"
+             :label="$t('biometric.labels.domain')" />
+    <q-input v-model="user.email"
+             dense
+             type="email"
+             :label="$t('biometric.labels.email')" />
+    <q-input v-model="user.displayName"
+             dense
+             type="name"
+             :label="$t('biometric.labels.completeName')" />
 
-    <q-btn label="Register" icon="fingerprint" @click.prevent="createRegistration" />
-    <q-btn label="Login" icon="fingerprint" @click.prevent="checkRegistration()" />
-    <q-btn label="Clear registrations" icon="fingerprint" @click.prevent="clearRegistration()" />
+    <q-btn :label="$t('biometric.buttons.register')"
+           icon="fingerprint"
+           @click.prevent="createRegistration" />
+    <q-btn :label="$t('biometric.buttons.login')"
+           icon="fingerprint"
+           @click.prevent="checkRegistration()" />
+    <q-btn :label="$t('biometric.buttons.clear')"
+           icon="fingerprint"
+           @click.prevent="clearRegistration()" />
   </q-form>
 </template>
 

@@ -7,7 +7,7 @@
     >
 
     <div>
-      Home
+      {{ $t('home.title') }}
     </div>
   </q-page>
 </template>
