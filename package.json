@@ -8,6 +8,9 @@
   "scripts": {
     "dev": "quasar dev --port=8081",
     "build": "quasar build",
+    "dev-pwa": "quasar dev --mode pwa --port=8081",
+    "build-pwa": "quasar build --mode pwa",
+    "build-debug-pwa": "quasar build --mode pwa --debug",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
@@ -33,7 +36,8 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^9.0.0",
-    "eslint-webpack-plugin": "^3.1.1"
+    "eslint-webpack-plugin": "^3.1.1",
+    "workbox-webpack-plugin": "^6.0.0"
   },
   "browserslist": [
     "last 10 Chrome versions",

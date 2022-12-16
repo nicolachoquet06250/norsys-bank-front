@@ -43,4 +43,8 @@ const user = reactive({
   password: '',
   biometricLogin: false
 })
+
+const handleRegister = () => {
+  console.log(user.email, user.password, user.biometricLogin)
+}
 </script>

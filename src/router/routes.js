@@ -18,11 +18,11 @@ const routes = [
   },
   {
     path: '/login/biometric',
-    name: 'biometric-login',
     component: () => import('layouts/MainLayout.vue'),
     children: [
       {
         path: '',
+        name: 'biometric-login',
         component: () => import('pages/BiometricPage.vue')
       }
     ]

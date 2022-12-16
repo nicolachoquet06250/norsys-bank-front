@@ -85,7 +85,7 @@ module.exports = configure(function (ctx) {
       server: {
         type: 'https'
       },
-      host: '0.0.0.0',
+      host: 'norsys-bank.local',
       port: 8081,
       open: true // opens browser window automatically
     },
@@ -141,7 +141,7 @@ module.exports = configure(function (ctx) {
 
     // https://v2.quasar.dev/quasar-cli-webpack/developing-pwa/configuring-pwa
     pwa: {
-      workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
+      workboxPluginMode: 'InjectManifest', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
 
       // for the custom service worker ONLY (/src-pwa/custom-service-worker.[js|ts])

@@ -83,7 +83,7 @@
         </q-page>
     </q-tab-panels>
 
-    <q-footer v-if="ios">
+    <q-footer v-if="os.ios">
         <q-tabs
           v-model="tab"
           class="bg-grey-3"
@@ -105,7 +105,7 @@ import { essentialLinks } from 'src/boot/menu'
 import EssentialLink from 'src/components/EssentialLink.vue'
 // import { useQuasar } from 'quasar'
 import { useRouter } from 'vue-router'
-import { ios } from 'platform-detect/os.mjs'
+import os from 'platform-detect/os.mjs'
 
 // const $q = useQuasar()
 
